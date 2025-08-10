@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://c24sa2qj5yacb"]
+
+[ext_resource type="Texture2D" uid="uid://f8bvwi780ti8" path="res://assets/sprites/user_interface/start_menu/start_screen_background.jpg" id="1_6o0yw"]
+[ext_resource type="Script" uid="uid://cd54qu7tj24fu" path="res://assets/scenes/main_menu/main_menu.gd" id="1_acsil"]
+[ext_resource type="AudioStream" uid="uid://ciu2r0p1354np" path="res://assets/ost/user_interface/main_menu.mp3" id="2_8qhov"]
+[ext_resource type="Texture2D" uid="uid://bm83q6qdbjgmu" path="res://assets/sprites/user_interface/start_menu/logo.png" id="2_hx1rq"]
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_acsil")
+logo_bounce_length = 10.0
+
+[node name="audio" type="Node" parent="."]
+
+[node name="main_menu" type="AudioStreamPlayer2D" parent="audio"]
+stream = ExtResource("2_8qhov")
+autoplay = true
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -976.0
+offset_top = -682.0
+offset_right = 976.0
+offset_bottom = 682.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_6o0yw")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="logo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 540.0
+offset_right = 735.0
+offset_bottom = 960.0
+texture = ExtResource("2_hx1rq")
+expand_mode = 1
+stretch_mode = 5

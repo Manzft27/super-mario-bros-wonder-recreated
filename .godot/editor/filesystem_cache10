@@ -1,4 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1754865179
+::res://::1754868385
 icon.png::CompressedTexture2D::2027217715415679846::1754864510::1754865181::1::::<><><>0<>0<>df3732107e0cbff77384fe00c06839a2<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
-README.md::TextFile::-1::1754864995::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1754866216::0::1::::<><><>0<>0<><>::
+::res://assets/::1754869227
+::res://assets/fonts/::1754866985
+DIN 2014 Demi.ttf::FontFile::7671451897922204624::1624305788::1754866985::1::::<><><>0<>0<>658c8888e1a09ba23a37466cb4dea5c3<>res://.godot/imported/DIN 2014 Demi.ttf-dc7d83d2953ece38ee2d8c2408f1087a.fontdata::
+NinNewSuperMarioBrosT53ou.ttf::FontFile::299393159416218279::1707078518::1754866985::1::::<><><>0<>0<>502dc8b92b93bd867729cf7b9491563f<>res://.godot/imported/NinNewSuperMarioBrosT53ou.ttf-3aa044c4cf297d1b35484388be09d91b.fontdata::
+NinNewSuperMarioBrosT53Reg.ttf::FontFile::7776472743946866011::1707078518::1754866985::1::::<><><>0<>0<>f74e428550c529a0dc270cdd35a78a4f<>res://.godot/imported/NinNewSuperMarioBrosT53Reg.ttf-5509fa5441c0ce12efe8e097dba903e9.fontdata::
+::res://assets/ost/::1754869234
+::res://assets/ost/user_interface/::1754869240
+main_menu.mp3::AudioStreamMP3::5377310726348505837::1715134540::1754869241::1::::<><><>0<>0<>a5ee5589af82601ca915540ea52b1652<>res://.godot/imported/main_menu.mp3-3dd3aae2ad124f9d7a15bde6038c30ee.mp3str::
+::res://assets/scenes/::1754867049
+::res://assets/scenes/main_menu/::1754869200
+main_menu.tscn::PackedScene::6728901449647883141::1754869200::0::1::::<><><>0<>0<><>::uid://f8bvwi780ti8::::res://assets/sprites/user_interface/start_menu/start_screen_background.jpg<>uid://cd54qu7tj24fu::::res://assets/scenes/main_menu/main_menu.gd<>uid://bm83q6qdbjgmu::::res://assets/sprites/user_interface/start_menu/logo.png
+main_menu.gd::GDScript::5047129697191937530::1754869181::0::1::::<>Control<><>0<>0<><>::
+::res://assets/sprites/::1754866931
+::res://assets/sprites/user_interface/::1754866980
+::res://assets/sprites/user_interface/misc/::1754866985
+cursor.png::CompressedTexture2D::3981938344057911195::1716344596::1754866985::1::::<><><>0<>0<>da804fb4d9d8be11f4b3492d81711b93<>res://.godot/imported/cursor.png-cc113cb3614b9480e863ddd43a6f411a.ctex::
+::res://assets/sprites/user_interface/start_menu/::1754866989
+logo.png::CompressedTexture2D::3298541574812130428::1715133106::1754866985::1::::<><><>0<>0<>9720662307683a1df004d10f005f1559<>res://.godot/imported/logo.png-60a0bd7713f0289a160dd2c46e74f655.ctex::
+start_screen_background.jpg::CompressedTexture2D::419168072110079829::1715133210::1754866989::1::::<><><>0<>0<>7e0a7fac7d3a5455644a4c26152e51ac<>res://.godot/imported/start_screen_background.jpg-d34ed138a8be98684e4d5721e77dd7ac.ctex::

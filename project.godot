@@ -12,8 +12,17 @@ config_version=5
 
 config/name="Super Mario Bros Wonder Recreated"
 config/tags=PackedStringArray("recreation")
+run/main_scene="uid://c24sa2qj5yacb"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="uid://3488kn57285o"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=960
+window/size/window_height_override=540
+window/stretch/mode="canvas_items"
 
 [rendering]
 
