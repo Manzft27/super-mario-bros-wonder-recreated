@@ -1,13 +1,9 @@
-Hi, I'm @Manzft27, i'm a little youtuber and game programmer.
-I'm 16, and i'm making a lot of projects in Godot.
+<h1>What is this?</h1>
+This is a recreation made from scratch in Godot Engine v4.4.1 that seeks to recreate all the content of Super Mario Bros Wonder making consessions of quality in some aspects and using pre-rendered sprites in order to considerably reduce the development time.
 
-This is a project trying to recreate a bit of Super Mario Bros Wonder, but in godot.
+<h2>Can i help?</h1>
+Yea, the game is open source and you can download it and modify it by yourself. You can make any questions making a md to me in discord: @manzft27.
 
-If you wanna play this fangame or modify the code you are welcome!
+The purpose of this is recreate all Super Mario Bros Wonder for PC (and probably Android), in order to bring the game to the maximum number of people possible, allowing Online, Multiplayer and Modding due to the ease of Godot Engine.
 
-Hope you like my work ^^.
-
-<!---
-Manzft27/Manzft27 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+You are free of contribute to the project, for now im working alone but hope that changes soon, thanks for reading!
