@@ -7,3 +7,9 @@ Yea, the game is open source and you can download it and modify it by yourself. 
 The purpose of this is recreate all Super Mario Bros Wonder for PC (and probably Android), in order to bring the game to the maximum number of people possible, allowing Online, Multiplayer and Modding due to the ease of Godot Engine.
 
 You are free of contribute to the project, for now im working alone but hope that changes soon, thanks for reading!
+
+<h1>To do list</h1>
+1) Make the main menu and UI system
+2) Basic mario animations and movement
+3) Basic assets (tiles and stuff)
+...
