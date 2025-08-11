@@ -1,9 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://c24sa2qj5yacb"]
+[gd_scene load_steps=8 format=3 uid="uid://c24sa2qj5yacb"]
 
 [ext_resource type="Texture2D" uid="uid://f8bvwi780ti8" path="res://assets/sprites/user_interface/start_menu/start_screen_background.jpg" id="1_6o0yw"]
 [ext_resource type="Script" uid="uid://cd54qu7tj24fu" path="res://assets/scenes/main_menu/main_menu.gd" id="1_acsil"]
 [ext_resource type="AudioStream" uid="uid://ciu2r0p1354np" path="res://assets/ost/user_interface/main_menu.mp3" id="2_8qhov"]
 [ext_resource type="Texture2D" uid="uid://bm83q6qdbjgmu" path="res://assets/sprites/user_interface/start_menu/logo.png" id="2_hx1rq"]
+[ext_resource type="FontFile" uid="uid://dhkdxr5h4b817" path="res://assets/fonts/DIN 2014 Demi.ttf" id="5_tfy4q"]
+[ext_resource type="Texture2D" uid="uid://bh5xx0h4y3up0" path="res://assets/sprites/user_interface/start_menu/l+r.png" id="6_trycp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f6bh1"]
+font = ExtResource("5_tfy4q")
+font_size = 40
+outline_size = 15
+outline_color = Color(0.12549, 0.12549, 0.12549, 1)
+shadow_size = 15
+shadow_color = Color(0.12549, 0.12549, 0.12549, 1)
+shadow_offset = Vector2(2, -2)
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -13,7 +24,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_acsil")
-logo_bounce_length = 10.0
+bounce_length = 10.0
 
 [node name="audio" type="Node" parent="."]
 
@@ -47,3 +58,37 @@ offset_bottom = 960.0
 texture = ExtResource("2_hx1rq")
 expand_mode = 1
 stretch_mode = 5
+
+[node name="press_l+r" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -184.0
+offset_top = -97.0
+offset_right = 184.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 10
+
+[node name="label" type="Label" parent="press_l+r"]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Press"
+label_settings = SubResource("LabelSettings_f6bh1")
+justification_flags = 131
+
+[node name="l+r" type="TextureRect" parent="press_l+r"]
+layout_mode = 2
+size_flags_vertical = 0
+texture = ExtResource("6_trycp")
+stretch_mode = 5
+
+[node name="label2" type="Label" parent="press_l+r"]
+layout_mode = 2
+size_flags_vertical = 8
+text = "to Start"
+label_settings = SubResource("LabelSettings_f6bh1")

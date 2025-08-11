@@ -1,3 +1,5 @@
+TextureRect
+HBoxContainer
+Label
 AudioStreamPlayer2D
 Node
-TextureRect
