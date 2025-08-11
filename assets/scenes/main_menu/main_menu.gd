@@ -15,6 +15,13 @@ func _input(event: InputEvent) -> void:
 			"":
 				$"audio/press_l+r".play()
 				menu_handler._change_menu("users")
+				$"press_l+r".hide()
+	
+	if (event.is_pressed() && event.is_action_pressed("back")):
+		match (menu_handler.current_menu):
+			"users":
+				menu_handler._change_menu("")
+				$"press_l+r".show()
 
 
 func _start_logo_bounce_animation() -> void:

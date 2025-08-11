@@ -15,6 +15,7 @@ func _change_menu(menu: String):
 		get_parent().get_node("menus/"+menu).show()
 	if (current_menu != ""):
 		get_parent().get_node("menus/"+current_menu).hide()
+	current_menu = menu
 
 
 func _check_menus_node() -> void:
