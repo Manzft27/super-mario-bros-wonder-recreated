@@ -23,6 +23,7 @@ window/size/viewport_height=1080
 window/size/window_width_override=960
 window/size/window_height_override=540
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="uid://bwy47b3fw1f28"
 
 [rendering]
 
