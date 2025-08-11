@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1754883872
-README.md::TextFile/TextFile::-1::1754876929::0::1::::<><><>0<>0<><>::
+::res://::1754933924
+README.md::TextFile/TextFile::-1::1754885555::0::1::::<><><>0<>0<><>::
 ::res://addons/::1754882137
 ::res://addons/CodeEditorBackground/::1754882139
 Background Options.tscn::PackedScene/PackedScene::2292262631765120090::1754882137::0::1::::<><><>0<>0<><>::res://addons/CodeEditorBackground/BackgroundOptions.gd<>uid://l5dhp3lg71ob::::res://addons/CodeEditorBackground/save.png
@@ -41,17 +41,17 @@ NinNewSuperMarioBrosT53Reg.ttf::FontFile/FontFile::7776472743946866011::17070785
 main_menu.mp3::AudioStreamMP3/AudioStreamMP3::5377310726348505837::1715134540::1754869241::1::::<><><>0<>0<>a5ee5589af82601ca915540ea52b1652<>res://.godot/imported/main_menu.mp3-3dd3aae2ad124f9d7a15bde6038c30ee.mp3str::
 ::res://assets/scenes/::1754883006
 ::res://assets/scenes/components/::1754883012
-::res://assets/scenes/components/menu_handler/::1754883963
-menu_handler.tscn::PackedScene::6702651137665973671::1754883963::0::1::::<><><>0<>0<><>::uid://c4x7jc1d3gq7e::::res://assets/scenes/components/menu_handler/menu_handler.gd
-menu_handler.gd::GDScript::6857757682531781204::1754883839::0::1::::<>Node<><>0<>0<><>::
-::res://assets/scenes/main_menu/::1754884270
-main_menu.gd::GDScript::5047129697191937530::1754883961::0::1::::<>Control<><>0<>0<><>::
-main_menu.tscn::PackedScene::6728901449647883141::1754884270::0::1::::<><><>0<>0<><>::uid://f8bvwi780ti8::::res://assets/sprites/user_interface/start_menu/start_screen_background.jpg<>uid://cd54qu7tj24fu::::res://assets/scenes/main_menu/main_menu.gd<>uid://ciu2r0p1354np::::res://assets/ost/user_interface/main_menu.mp3<>uid://c2q2xj28deyep::::res://assets/scenes/components/menu_handler/menu_handler.tscn<>uid://bm83q6qdbjgmu::::res://assets/sprites/user_interface/start_menu/logo.png<>uid://dhkdxr5h4b817::::res://assets/fonts/DIN 2014 Demi.ttf<>uid://bh5xx0h4y3up0::::res://assets/sprites/user_interface/start_menu/l+r.png<>uid://dd3wy1hr81nm7::::res://assets/shaders/gaussian_blur.gdshader
-::res://assets/shaders/::1754884270
-gaussian_blur.gdshader::Shader::7429011169239927084::1754884270::0::1::::<><><>0<>0<><>::
+::res://assets/scenes/components/menu_handler/::1754885671
+menu_handler.gd::GDScript/GDScript::6857757682531781204::1754883839::0::1::::<>Node<><>0<>0<><>::
+menu_handler.tscn::PackedScene/PackedScene::6702651137665973671::1754885671::0::1::::<><><>0<>0<><>::uid://c4x7jc1d3gq7e::::res://assets/scenes/components/menu_handler/menu_handler.gd
+::res://assets/scenes/main_menu/::1754885671
+main_menu.gd::GDScript/GDScript::5047129697191937530::1754884358::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene/PackedScene::6728901449647883141::1754885671::0::1::::<><><>0<>0<><>::uid://f8bvwi780ti8::::res://assets/sprites/user_interface/start_menu/start_screen_background.jpg<>uid://cd54qu7tj24fu::::res://assets/scenes/main_menu/main_menu.gd<>uid://ciu2r0p1354np::::res://assets/ost/user_interface/main_menu.mp3<>uid://c2q2xj28deyep::::res://assets/scenes/components/menu_handler/menu_handler.tscn<>uid://bm83q6qdbjgmu::::res://assets/sprites/user_interface/start_menu/logo.png<>uid://cb27msq4uie58::::res://assets/sounds/user_interface/press_l+r.wav<>uid://dhkdxr5h4b817::::res://assets/fonts/DIN 2014 Demi.ttf<>uid://bh5xx0h4y3up0::::res://assets/sprites/user_interface/start_menu/l+r.png<>uid://dd3wy1hr81nm7::::res://assets/shaders/gaussian_blur.gdshader
+::res://assets/shaders/::1754891361
+gaussian_blur.gdshader::Shader::7429011169239927084::1754891361::0::1::::<><><>0<>0<><>::
 ::res://assets/sounds/::1754884323
 ::res://assets/sounds/user_interface/::1754884330
-press_l+r.wav::AudioStreamWAV::4900733755161081421::1714448914::1754884330::1::::<><><>0<>0<>0b42a395373049c5b7d1ea5f1c3bd4cd<>res://.godot/imported/press_l+r.wav-6c860c72993b3444277ec8d406651d8f.sample::
+press_l+r.wav::AudioStreamWAV/AudioStreamWAV::4900733755161081421::1714448914::1754884330::1::::<><><>0<>0<>0b42a395373049c5b7d1ea5f1c3bd4cd<>res://.godot/imported/press_l+r.wav-6c860c72993b3444277ec8d406651d8f.sample::
 ::res://assets/sprites/::1754875347
 ::res://assets/sprites/icon/::1754875347
 icon.png::CompressedTexture2D/CompressedTexture2D::2027217715415679846::1754864510::1754875347::1::::<><><>0<>0<>715c04bb7b15f4decf21779a4cdc5a5a<>res://.godot/imported/icon.png-6e272439f07d47d9ef2ba7626df2a052.ctex::

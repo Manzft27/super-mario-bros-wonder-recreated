@@ -27,7 +27,7 @@ mouse_cursor/custom_image="uid://bwy47b3fw1f28"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/CodeEditorBackground/plugin.cfg", "res://addons/script-ide/plugin.cfg")
+enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
 
 [input]
 

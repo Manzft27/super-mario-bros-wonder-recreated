@@ -1,5 +1,4 @@
 res://assets/scenes/main_menu/main_menu.tscn
-res://assets/scenes/main_menu/main_menu.gd
 res://assets/shaders/gaussian_blur.gdshader
 res://assets/scenes/components/menu_handler/menu_handler.tscn
-res://assets/scenes/components/menu_handler/menu_handler.gd
+res://assets/scenes/main_menu/main_menu.gd
