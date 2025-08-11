@@ -27,7 +27,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_acsil")
 bounce_length = 10.0
-l_plus_r_icon = ExtResource("6_trycp")
 
 [node name="menu_handler" parent="." instance=ExtResource("2_f6bh1")]
 
