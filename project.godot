@@ -25,6 +25,10 @@ window/size/window_height_override=540
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="uid://bwy47b3fw1f28"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
