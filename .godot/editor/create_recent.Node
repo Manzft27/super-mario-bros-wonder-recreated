@@ -1,5 +1,7 @@
+Node
+ColorRect
 TextureRect
+Control
 HBoxContainer
 Label
 AudioStreamPlayer2D
-Node

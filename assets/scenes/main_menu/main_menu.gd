@@ -1,10 +1,20 @@
 extends Control
 
+@onready var menu_handler: Node = $menu_handler
+
 @export var bounce_length: float
 
 func _ready() -> void:
 	_start_logo_bounce_animation()
 	_start_press_l_plus_r_bounce_animation()
+
+
+func _input(event: InputEvent) -> void:
+	if (event.is_pressed() && event.is_action_pressed("enter")):
+		match (menu_handler.current_menu):
+			"":
+				$"audio/press_l+r".play()
+				menu_handler._change_menu("users")
 
 
 func _start_logo_bounce_animation() -> void:

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://8t1356suuxf4"]
+
+[node name="FileDialog" type="FileDialog"]
+initial_position = 2
+title = "Choose an Image"
+size = Vector2i(392, 162)
+visible = true
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.png", "*.jpg", "*.jpeg")

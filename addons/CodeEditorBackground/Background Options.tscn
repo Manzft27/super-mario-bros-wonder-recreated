@@ -1,0 +1,121 @@
+[gd_scene load_steps=3 format=3 uid="uid://7wnh3veoihvu"]
+
+[ext_resource type="Script" path="res://addons/CodeEditorBackground/BackgroundOptions.gd" id="1_jolqk"]
+[ext_resource type="Texture2D" uid="uid://l5dhp3lg71ob" path="res://addons/CodeEditorBackground/save.png" id="2_3cvy5"]
+
+[node name="BackgroundOptions" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jolqk")
+
+[node name="Opacity" type="Label" parent="."]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 68.0
+offset_bottom = 66.0
+text = "Opacity"
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 2
+offset_left = 128.0
+offset_top = 48.0
+offset_right = 384.0
+offset_bottom = 64.0
+max_value = 255.0
+value = 30.0
+
+[node name="BarValue" type="Label" parent="."]
+layout_mode = 2
+offset_left = 128.0
+offset_top = 8.0
+offset_right = 180.0
+offset_bottom = 34.0
+text = "30"
+
+[node name="StretchMode" type="Label" parent="."]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 100.0
+offset_right = 112.0
+offset_bottom = 126.0
+text = "Stretch Mode"
+
+[node name="StretchOptions" type="OptionButton" parent="."]
+layout_mode = 2
+offset_left = 128.0
+offset_top = 96.0
+offset_right = 436.0
+offset_bottom = 127.0
+item_count = 7
+selected = 6
+popup/item_0/text = "STRETCH_SCALE"
+popup/item_0/id = 0
+popup/item_1/text = "STRETCH_TILE"
+popup/item_1/id = 1
+popup/item_2/text = "STRETCH_KEEP"
+popup/item_2/id = 2
+popup/item_3/text = "STRETCH_KEEP_CENTERED"
+popup/item_3/id = 3
+popup/item_4/text = "STRETCH_KEEP_ASPECT"
+popup/item_4/id = 4
+popup/item_5/text = "STRETCH_KEEP_ASPECT_CENTERED"
+popup/item_5/id = 5
+popup/item_6/text = "STRETCH_KEEP_ASPECT_COVERED"
+popup/item_6/id = 6
+
+[node name="RandomLabel" type="Label" parent="."]
+layout_mode = 2
+offset_left = 19.0
+offset_top = 232.0
+offset_right = 181.0
+offset_bottom = 258.0
+text = "Random Background"
+
+[node name="FolderLabel" type="Label" parent="."]
+layout_mode = 2
+offset_left = 16.0
+offset_top = 296.0
+offset_right = 65.0
+offset_bottom = 322.0
+text = "Folder"
+
+[node name="DirectoryLine" type="LineEdit" parent="."]
+layout_mode = 2
+offset_left = 128.0
+offset_top = 288.0
+offset_right = 387.0
+offset_bottom = 319.0
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="RandomButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 128.0
+offset_top = 352.0
+offset_right = 251.0
+offset_bottom = 383.0
+text = "Select Random"
+
+[node name="SaveButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 8.0
+offset_right = 40.0
+offset_bottom = 32.0
+icon = ExtResource("2_3cvy5")
+flat = true
+expand_icon = true
+
+[node name="ChangeBackgroundButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 136.0
+offset_top = 160.0
+offset_right = 299.0
+offset_bottom = 191.0
+text = "Change Background"
+
+[connection signal="item_selected" from="StretchOptions" to="." method="_on_stretch_options_item_selected"]

@@ -1,11 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://c24sa2qj5yacb"]
+[gd_scene load_steps=12 format=3 uid="uid://c24sa2qj5yacb"]
 
 [ext_resource type="Texture2D" uid="uid://f8bvwi780ti8" path="res://assets/sprites/user_interface/start_menu/start_screen_background.jpg" id="1_6o0yw"]
 [ext_resource type="Script" uid="uid://cd54qu7tj24fu" path="res://assets/scenes/main_menu/main_menu.gd" id="1_acsil"]
 [ext_resource type="AudioStream" uid="uid://ciu2r0p1354np" path="res://assets/ost/user_interface/main_menu.mp3" id="2_8qhov"]
+[ext_resource type="PackedScene" uid="uid://c2q2xj28deyep" path="res://assets/scenes/components/menu_handler/menu_handler.tscn" id="2_f6bh1"]
 [ext_resource type="Texture2D" uid="uid://bm83q6qdbjgmu" path="res://assets/sprites/user_interface/start_menu/logo.png" id="2_hx1rq"]
+[ext_resource type="AudioStream" uid="uid://cb27msq4uie58" path="res://assets/sounds/user_interface/press_l+r.wav" id="4_b43tu"]
 [ext_resource type="FontFile" uid="uid://dhkdxr5h4b817" path="res://assets/fonts/DIN 2014 Demi.ttf" id="5_tfy4q"]
 [ext_resource type="Texture2D" uid="uid://bh5xx0h4y3up0" path="res://assets/sprites/user_interface/start_menu/l+r.png" id="6_trycp"]
+[ext_resource type="Shader" uid="uid://dd3wy1hr81nm7" path="res://assets/shaders/gaussian_blur.gdshader" id="7_trycp"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_f6bh1"]
 font = ExtResource("5_tfy4q")
@@ -15,6 +18,14 @@ outline_color = Color(0.12549, 0.12549, 0.12549, 1)
 shadow_size = 15
 shadow_color = Color(0.12549, 0.12549, 0.12549, 1)
 shadow_offset = Vector2(2, -2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f6bh1"]
+shader = ExtResource("7_trycp")
+shader_parameter/blur_radius = 8
+shader_parameter/blur_strength = 10.0
+shader_parameter/fade_direction = 0
+shader_parameter/fade_cutoff = 1.0
+shader_parameter/fade_intensity = 2.0
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -26,11 +37,17 @@ grow_vertical = 2
 script = ExtResource("1_acsil")
 bounce_length = 10.0
 
+[node name="menu_handler" parent="." instance=ExtResource("2_f6bh1")]
+
 [node name="audio" type="Node" parent="."]
 
 [node name="main_menu" type="AudioStreamPlayer2D" parent="audio"]
 stream = ExtResource("2_8qhov")
 autoplay = true
+
+[node name="press_l+r" type="AudioStreamPlayer2D" parent="audio"]
+stream = ExtResource("4_b43tu")
+volume_db = 20.0
 
 [node name="background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -92,3 +109,39 @@ layout_mode = 2
 size_flags_vertical = 8
 text = "to Start"
 label_settings = SubResource("LabelSettings_f6bh1")
+
+[node name="menus" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="users" type="Control" parent="menus"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="gaussian_blur" type="ColorRect" parent="menus/users"]
+material = SubResource("ShaderMaterial_f6bh1")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="ColorRect" parent="menus/users"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.262932, 0.262932, 0.262932, 0.462745)
