@@ -6,7 +6,7 @@ extends Control
 
 func _ready() -> void:
 	_start_logo_bounce_animation()
-	_start_l_plus_r_bounce_animation() 
+	_start_l_plus_r_bounce_animation()
 
 
 func _input(event: InputEvent) -> void:
@@ -40,3 +40,10 @@ func _start_l_plus_r_bounce_animation() -> void:
 	tween.set_loops()
 	tween.tween_property($"press_l+r/l+r", "position:y", bounce_length*0.75, 0.75).as_relative()
 	tween.tween_property($"press_l+r/l+r", "position:y", -bounce_length*0.75, 0.75).as_relative()
+
+
+func _on_add_user_pressed() -> void:
+	$audio/button_press.play()
+
+func _on_add_user_mouse_entered() -> void:
+	$audio/button_select.play()

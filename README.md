@@ -10,7 +10,6 @@ You are free to contribute to the project, for now im working alone but hope tha
 <br>
 <h1>To do list</h1>
 1) Make the main menu and UI system ✅<br> 
-2) Local users system and users submenu<br>
-3) Basic mario animations and movement<br>
-4) Basic assets (tiles and stuff)<br>
+2) Basic mario animations and movement<br>
+3) Basic assets (tiles and stuff)<br>
 ...

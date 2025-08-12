@@ -1,7 +1,8 @@
+TextureRect
+TextureButton
 RichTextLabel
 Node
 ColorRect
-TextureRect
 Control
 HBoxContainer
 Label
